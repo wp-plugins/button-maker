@@ -64,6 +64,7 @@ People love to press buttons just to see what happens!
 
  
 Fill in the options as follows:
+
 1. “Enter Text”  – Enter the text that you wish to see on the button.
 2. “Select Font Size” – Select the required font size – I recommend 14px or 16px
 3. “Select Font Color” – Select the required font color. Black or white is best depending on the button color.
@@ -101,8 +102,12 @@ Fill in the options as follows:
 * Go to your chosen post or page and ensure your cursor is where you want the buttons to appear.
 * Add the following shortcode:
 
+* [custom_buttons_shortcode]
+
 * This must be entered exactly as it appears above. Publish or Update the post/page.
+
 * THAT’S IT!
+
 * Now go to the page or post and view your buttons in action!
  
 == Screenshots ==
