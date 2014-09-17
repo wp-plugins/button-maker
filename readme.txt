@@ -114,9 +114,9 @@ People love to press buttons just to see what happens!
 * Now go to the page or post and view your buttons in action!
  
 == Screenshots ==
-screenshot1.png
-screenshot2.png
-screenshot3.png
+screenshot-1.png
+screenshot-2.png
+screenshot-3.png
 
 == Changelog ==
 
