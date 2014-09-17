@@ -63,7 +63,7 @@ People love to press buttons just to see what happens!
 * You’ll see several options:
 
  
-Fill in the options as follows:
+* Fill in the options as follows:
 
 1. “Enter Text”  – Enter the text that you wish to see on the button.
 2. “Select Font Size” – Select the required font size – I recommend 14px or 16px
@@ -83,6 +83,7 @@ Fill in the options as follows:
 
  
 * There are 8 columns:
+
 1. “Show?” – check this to see the button in a particular post or page. THE DEFAULT IS OFF SO IF YOU WISH YOUR BUTTON TO APPEAR IN A POST OR PAGE YOU MUST CHECK THIS!
 2. “No.” is simply the number of the button created
 3. “Text” is the chosen text which will appear on the button
@@ -102,7 +103,9 @@ Fill in the options as follows:
 * Go to your chosen post or page and ensure your cursor is where you want the buttons to appear.
 * Add the following shortcode:
 
-* [custom_buttons_shortcode]
+* custom_buttons_shortcode
+
+* YOU MUST ENCLOSE THIS IN SQUARE BRACKETS!
 
 * This must be entered exactly as it appears above. Publish or Update the post/page.
 
