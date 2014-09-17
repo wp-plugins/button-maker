@@ -114,8 +114,10 @@ People love to press buttons just to see what happens!
 * Now go to the page or post and view your buttons in action!
  
 == Screenshots ==
+screenshot1.png
+screenshot2.png
+screenshot3.png
 
-No screenshots yet.
 == Changelog ==
 
 Issue 1: No changes
