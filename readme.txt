@@ -1,6 +1,6 @@
 === Button Maker Plugin===
 Contributors: None
-Donate link: http://example.com/
+Donate link: colinh@liberationbooks.com
 Tags: : button, button generator, buttons, call to action, create button, create buttons in wordpress, wordpress button maker, button maker, create button in wordpress, wordpress button, plugin, short code, short codes, wordpress button generator, wordpress button maker, wordpress button plugin, wp button plugin, wp button maker, wp button maker
 Requires at least: 3.2
 Tested up to: 4.0
