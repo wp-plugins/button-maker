@@ -1,5 +1,5 @@
 === Button Maker Plugin===
-Contributors: None
+Contributors: colinph970
 Donate link: https://www.paypal.com/cgi-bin/webscr
 Tags: : button, button generator, buttons, call to action, create button, create buttons in wordpress, wordpress button maker, button maker, create button in wordpress, wordpress button, plugin, short code, short codes, wordpress button generator, wordpress button maker, wordpress button plugin, wp button plugin, wp button maker, wp button maker
 Requires at least: 3.2
@@ -15,9 +15,11 @@ This is a plugin which creates beautiful interactive buttons on a Wordpress post
 
 A great new button maker for Wordpress - extremely powerful and so simple that anyone can use it to create superb and beautiful interactive buttons on any Wordpress page or post.
 Great for creating any type of button including:
+
 * Call to Action
 * Navigation Options
 * Affiliate Redirects
+
 People love to press buttons just to see what happens!
 
 * No coding knowledge required, simply install the plugin and it does the rest
@@ -108,6 +110,8 @@ People love to press buttons just to see what happens!
 * YOU MUST ENCLOSE THIS IN SQUARE BRACKETS!
 
 * This must be entered exactly as it appears above. Publish or Update the post/page.
+
+* You can read instructions for use at [Using Button Maker](http://pluginhandy.com/how-to-use/)
 
 * THAT’S IT!
 
