@@ -35,7 +35,7 @@ People love to press buttons just to see what happens!
 * Color picker, so you can select virtually unlimited color combinations
 * Comes with full 5 site licence for up to 5 sites that you personally own
 
-* You can read instructions for use at [Using Button Maker](http://pluginhandy.com/how-to-use/)
+You can read instructions for use at [Using Button Maker](http://pluginhandy.com/how-to-use/)
 
 == Installation ==
 
