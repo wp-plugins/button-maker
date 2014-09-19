@@ -1,6 +1,6 @@
 === Button Maker Plugin===
 Contributors: colinph970
-Donate link: https://www.paypal.com/cgi-bin/webscr
+Donate link: http://pluginhandy.com/donate/
 Tags: : button, button generator, buttons, call to action, create button, create buttons in wordpress, wordpress button maker, button maker, create button in wordpress, wordpress button, plugin, short code, short codes, wordpress button generator, wordpress button maker, wordpress button plugin, wp button plugin, wp button maker, wp button maker
 Requires at least: 3.2
 Tested up to: 4.0
@@ -107,7 +107,7 @@ You can read instructions for use at [Using Button Maker](http://pluginhandy.com
 * Go to your chosen post or page and ensure your cursor is where you want the buttons to appear.
 * Add the following shortcode:
 
-* custom_buttons_shortcode
+* ‘[custom_buttons_shortcode]’
 
 * YOU MUST ENCLOSE THIS IN SQUARE BRACKETS!
 
@@ -115,14 +115,14 @@ You can read instructions for use at [Using Button Maker](http://pluginhandy.com
 
 * You can read instructions for use at [Using Button Maker](http://pluginhandy.com/how-to-use/)
 
+* We’d love to hear your ideas about adding extra features to this plugin. You can request new additional features at [Request Extra Feature](http://pluginhandy.com/contact-us/)
+
 * THAT’S IT!
 
 * Now go to the page or post and view your buttons in action!
  
 == Screenshots ==
-screenshot-1.png
-screenshot-2.png
-screenshot-3.png
+No screenshots yet.
 
 == Changelog ==
 
