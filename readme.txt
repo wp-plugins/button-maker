@@ -35,7 +35,10 @@ People love to press buttons just to see what happens!
 * Color picker, so you can select virtually unlimited color combinations
 * Comes with full 5 site licence for up to 5 sites that you personally own
 
+
 You can read instructions for use at [Using Button Maker](http://pluginhandy.com/how-to-use/)
+
+We’d love to hear your ideas about adding extra features to this plugin. You can request new additional features at [Request Extra Feature](http://pluginhandy.com/contact-us/)
 
 == Installation ==
 
@@ -107,7 +110,7 @@ You can read instructions for use at [Using Button Maker](http://pluginhandy.com
 * Go to your chosen post or page and ensure your cursor is where you want the buttons to appear.
 * Add the following shortcode:
 
-* ‘[custom_buttons_shortcode]’
+* custom_buttons_shortcode
 
 * YOU MUST ENCLOSE THIS IN SQUARE BRACKETS!
 
