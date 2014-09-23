@@ -129,7 +129,7 @@ No screenshots yet.
 
 == Changelog ==
 
-Issue 1.1: Changes made to files to resolve permissions problem when saving buttons.
+Issue 1.1: Changes made to files to resolve permissions problem when saving buttons.PLEASE DELETE PREVIOUS VERSIONS RATHER THAN SIMPLY UPDATING THE PLUGIN.THEN INSTALL VERSION 1.1.
 
 
 == Upgrade Notice ==
