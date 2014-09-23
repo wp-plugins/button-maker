@@ -131,8 +131,6 @@ No screenshots yet.
 
 Issue 1.1: Changes made to files to resolve permissions problem when saving buttons.
 
-PLEASE DELETE PREVIOUS VERSIONS RATHER THAN SIMPLY UPDATING THE PLUGIN AND THEN INSTALL THE LATEST VERSION.
-
 
 == Upgrade Notice ==
 
