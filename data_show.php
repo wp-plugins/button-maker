@@ -27,12 +27,13 @@ function getchecked() {
 }
 </script>
 <?php global $wpdb;
+$btntable = PROF_TABLE_PREFIX."custom_btns";
 if(isset($_GET['editid']) && $_GET['editid'] != NULL) {
     include 'edit_btn.php';
 } else if (isset($_GET['delid']) && $_GET['delid'] != NULL) {
     
     $id = $_GET['delid'];
-    $query = "Delete from wp_custom_btns where id=$id";
+    $query = "Delete from $btntable where id=$id";
     $wpdb->query($query);
     $nextpage = site_url().'/wp-admin/admin.php?page=button-maker/buttons.php';
     echo "<script type='text/javascript'>document.location.href='$nextpage';</script>";
@@ -41,14 +42,14 @@ if(isset($_GET['editid']) && $_GET['editid'] != NULL) {
 } else if(isset($_GET['clearid']) && $_GET['clearid'] != NULL) {
     
     $id = $_GET['clearid'];
-    $query = "Update wp_custom_btns set clicks=0,impressions=0 where id=$id";
+    $query = "Update $btntable set clicks=0,impressions=0 where id=$id";
     $wpdb->query($query);
     $nextpage = site_url().'/wp-admin/admin.php?page=button-maker/buttons.php';
     echo "<script type='text/javascript'>document.location.href='$nextpage';</script>";
     exit;
     
 } else {
-    $buttons = $wpdb->get_results("Select * from `wp_custom_btns` order by id desc");
+    $buttons = $wpdb->get_results("Select * from `$btntable` order by id desc");
     //echo "<pre>";print_r($buttons);exit; ?>
     <div class="show_btns">
         <h2>List of Buttons</h2>

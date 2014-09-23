@@ -5,7 +5,7 @@ Plugin URI:
 Description: Plugin for Custom Buttons.
 Author: Pluginhandy
 Author URI: http://pluginhandy.com/
-Version: 1.0.0
+Version: 1.1
 Text Domain: 
 License: GPL version 2 or later - 
 */
@@ -24,6 +24,7 @@ wp_enqueue_script( 'jscolor', '/wp-content/plugins/' . PROF_FOLDER . '/jscolor/j
 global $wpdb;
 $comp_table_prefix=$wpdb->prefix;
 define('PROF_TABLE_PREFIX', $comp_table_prefix);
+$btntable = PROF_TABLE_PREFIX."custom_btns";
 
 function demo_install()
 {
@@ -63,14 +64,16 @@ function demo_install()
 add_action('wp_ajax_nopriv_map_post_type_show','map_post_type_show');
 add_action('wp_ajax_map_post_type_show','map_post_type_show');
 function map_post_type_show() {
+    $btntable = PROF_TABLE_PREFIX."custom_btns";
     if(isset($_POST['btn_id'])) {
         global $wpdb;
+        
         //echo "<pre>";print_r($_POST);die();
         $id = $_POST['btn_id'];
         /* update clicks */
-        $wpdb->query("UPDATE `wp_custom_btns` set clicks=(clicks+1) where id=$id");
+        $wpdb->query("UPDATE `$btntable` set clicks=(clicks+1) where id=$id");
         
-        $getbtn = $wpdb->get_results("Select * from `wp_custom_btns` where id=$id");
+        $getbtn = $wpdb->get_results("Select * from `$btntable` where id=$id");
         if($getbtn != NULL) {
             $url = $getbtn[0]->url;
             $result['output'] = 'yes';
@@ -90,7 +93,7 @@ function map_post_type_show() {
         
         foreach($getbtns as $btnid) {
             /* update impressions */
-            $wpdb->query("UPDATE `wp_custom_btns` set impressions=(impressions+1) where id=$btnid");
+            $wpdb->query("UPDATE `$btntable` set impressions=(impressions+1) where id=$btnid");
         }
         
         $result['output'] = 'updated';
@@ -154,7 +157,8 @@ function Form() {
 add_shortcode( 'form1', 'Form' );
 
 if(isset($_POST['save_btn'])) {
-    //echo "<pre>";print_r($_POST);exit;
+    //$tables = $wpdb->get_results("Select * from `$btntable`");
+    //echo "<pre>";print_r($tables);print_r($_POST);exit;
     $text = $_POST['btn_text'];
     $size = $_POST['font_size'];
     $color = $_POST['font_color'];
@@ -166,7 +170,7 @@ if(isset($_POST['save_btn'])) {
     $url = $_POST['url'];
     $html = trim($_POST['btn_html']);
     $current_time = time();
-    $wpdb->query("INSERT INTO `wp_custom_btns`(`text`, `size`, `color`, `height`, `width`, `background`, `hover`, `shape`, `url`, `clicks`, `impressions`, `html`, `created_at`) VALUES('$text','$size','$color','$height','$width','$backcolor','$hovercolor','$shape','$url','0','0','$html','$current_time')");
+    $wpdb->query("INSERT INTO `$btntable`(`text`, `size`, `color`, `height`, `width`, `background`, `hover`, `shape`, `url`, `clicks`, `impressions`, `html`, `created_at`) VALUES('$text','$size','$color','$height','$width','$backcolor','$hovercolor','$shape','$url','0','0','$html','$current_time')");
     $nextpage = site_url().'/wp-admin/admin.php?page=button-maker/buttons.php';
     echo "<script type='text/javascript'>document.location.href='$nextpage';</script>";
     exit;
@@ -185,7 +189,7 @@ if(isset($_POST['edit_btn'])) {
     $shape = $_POST['shape'];
     $url = $_POST['url'];
     $html = trim($_POST['btn_html']);
-    $wpdb->query("UPDATE `wp_custom_btns` set text='$text',size='$size',color='$color',height='$height',width='$width',background='$backcolor',hover='$hovercolor',url='$url',shape='$shape',html='$html' where id=$id");
+    $wpdb->query("UPDATE `$btntable` set text='$text',size='$size',color='$color',height='$height',width='$width',background='$backcolor',hover='$hovercolor',url='$url',shape='$shape',html='$html' where id=$id");
     $nextpage = site_url().'/wp-admin/admin.php?page=button-maker/buttons.php';
     echo "<script type='text/javascript'>document.location.href='$nextpage';</script>";
     exit;
@@ -211,13 +215,13 @@ if(isset($_POST['show_btns'])) {
     //echo "<pre>";print_r($_POST);exit;
     $isshow = $_POST['is_show'];
 	$order = $_POST['order'];
-	$wpdb->query("UPDATE `wp_custom_btns` SET `show` = '0' WHERE `show` =1;");
+	$wpdb->query("UPDATE `$btntable` SET `show` = '0' WHERE `show` =1;");
     foreach($isshow as $show) {
-		$wpdb->query("UPDATE `wp_custom_btns` SET `show` = '1' WHERE `id` =$show;");
+		$wpdb->query("UPDATE `$btntable` SET `show` = '1' WHERE `id` =$show;");
 	}
 	if($order != NULL) {
 		foreach($order as $key=>$value) {
-			$wpdb->query("UPDATE `wp_custom_btns` SET `order` = '$value' WHERE `id` =$key;");
+			$wpdb->query("UPDATE `$btntable` SET `order` = '$value' WHERE `id` =$key;");
 		}
 	}
     $nextpage = site_url().'/wp-admin/admin.php?page=button-maker/buttons.php';
@@ -233,9 +237,9 @@ function custom_buttons_function($atts)
     //echo "Yes, its working fine"; // this will not print out
 	
 	global $wpdb;
-	
+	$btntable = PROF_TABLE_PREFIX."custom_btns";
 	/* get all custom buttons */
-	$getbtns = $wpdb->get_results("Select * from `wp_custom_btns` WHERE `show`=1 order by `order` asc");
+	$getbtns = $wpdb->get_results("Select * from `$btntable` WHERE `show`=1 order by `order` asc");
 	if($getbtns != NULL) {
 		$btns = array();
 		foreach($getbtns as $getbtn) {
@@ -272,9 +276,9 @@ function custom_buttons_function($atts)
 function myscript() {
 
             global $wpdb;
-
+            $btntable = PROF_TABLE_PREFIX."custom_btns";
 			/* get all custom buttons */
-			$getbtns = $wpdb->get_results("Select * from `wp_custom_btns` WHERE `show`=1 order by created_at asc");
+			$getbtns = $wpdb->get_results("Select * from `$btntable` WHERE `show`=1 order by created_at asc");
 			if($getbtns != NULL) {
 				$btns = '';
 				foreach($getbtns as $getbtn) {

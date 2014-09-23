@@ -130,9 +130,8 @@ No screenshots yet.
 == Changelog ==
 
 Issue 1: No changes
-Issue 1.1 resolved issue with permissions for saving buttons
 
 
 == Upgrade Notice ==
 
-Please note that an updated version now exists. This fixes the issues with saving buttons due to permission errors.
+No upgrades to date

@@ -44,7 +44,7 @@ function Getbutton() {
 </script>
 <?php global $wpdb;
 $id = $_GET['editid'];
-$getbtn = $wpdb->get_results("Select * from `wp_custom_btns` where id=$id");
+$getbtn = $wpdb->get_results("Select * from `$btntable` where id=$id");
 $shape = $getbtn[0]->shape;
 //echo "<pre>";print_r($getbtn);exit; ?>
 <form method="post" action="" onsubmit="return Getbutton();">
