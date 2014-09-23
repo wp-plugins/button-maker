@@ -121,7 +121,7 @@ $shape = $getbtn[0]->shape;
             </div>
             <div class="field_content extra_class">
                 <input type="button" value="Preview" id="check_preview" title="Preview" />
-                <a style="text-decoration: none;" href="javascript:void(0);" onclick="del_btn(this.rel);" rel="<?php echo site_url(); ?>/wp-admin/admin.php?page=ButtonMaker/buttons.php&delid=<?php echo $id; ?>">
+                <a style="text-decoration: none;" href="javascript:void(0);" onclick="del_btn(this.rel);" rel="<?php echo site_url(); ?>/wp-admin/admin.php?page=button-maker/buttons.php&delid=<?php echo $id; ?>">
                     <input type="button" value="Delete" id="del_this_btn" title="Delete" />
                 </a>
                 <input type="submit" value="Update" name="edit_btn" id="submit_changes" title="Update" />

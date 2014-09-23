@@ -167,7 +167,7 @@ if(isset($_POST['save_btn'])) {
     $html = trim($_POST['btn_html']);
     $current_time = time();
     $wpdb->query("INSERT INTO `wp_custom_btns`(`text`, `size`, `color`, `height`, `width`, `background`, `hover`, `shape`, `url`, `clicks`, `impressions`, `html`, `created_at`) VALUES('$text','$size','$color','$height','$width','$backcolor','$hovercolor','$shape','$url','0','0','$html','$current_time')");
-    $nextpage = site_url().'/wp-admin/admin.php?page=ButtonMaker/buttons.php';
+    $nextpage = site_url().'/wp-admin/admin.php?page=button-maker/buttons.php';
     echo "<script type='text/javascript'>document.location.href='$nextpage';</script>";
     exit;
 }
@@ -186,7 +186,7 @@ if(isset($_POST['edit_btn'])) {
     $url = $_POST['url'];
     $html = trim($_POST['btn_html']);
     $wpdb->query("UPDATE `wp_custom_btns` set text='$text',size='$size',color='$color',height='$height',width='$width',background='$backcolor',hover='$hovercolor',url='$url',shape='$shape',html='$html' where id=$id");
-    $nextpage = site_url().'/wp-admin/admin.php?page=ButtonMaker/buttons.php';
+    $nextpage = site_url().'/wp-admin/admin.php?page=button-maker/buttons.php';
     echo "<script type='text/javascript'>document.location.href='$nextpage';</script>";
     exit;
 }
@@ -220,7 +220,7 @@ if(isset($_POST['show_btns'])) {
 			$wpdb->query("UPDATE `wp_custom_btns` SET `order` = '$value' WHERE `id` =$key;");
 		}
 	}
-    $nextpage = site_url().'/wp-admin/admin.php?page=ButtonMaker/buttons.php';
+    $nextpage = site_url().'/wp-admin/admin.php?page=button-maker/buttons.php';
     echo "<script type='text/javascript'>document.location.href='$nextpage';</script>";
     exit;
 }

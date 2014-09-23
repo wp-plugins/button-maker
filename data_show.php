@@ -34,7 +34,7 @@ if(isset($_GET['editid']) && $_GET['editid'] != NULL) {
     $id = $_GET['delid'];
     $query = "Delete from wp_custom_btns where id=$id";
     $wpdb->query($query);
-    $nextpage = site_url().'/wp-admin/admin.php?page=ButtonMaker/buttons.php';
+    $nextpage = site_url().'/wp-admin/admin.php?page=button-maker/buttons.php';
     echo "<script type='text/javascript'>document.location.href='$nextpage';</script>";
     exit;
     
@@ -43,7 +43,7 @@ if(isset($_GET['editid']) && $_GET['editid'] != NULL) {
     $id = $_GET['clearid'];
     $query = "Update wp_custom_btns set clicks=0,impressions=0 where id=$id";
     $wpdb->query($query);
-    $nextpage = site_url().'/wp-admin/admin.php?page=ButtonMaker/buttons.php';
+    $nextpage = site_url().'/wp-admin/admin.php?page=button-maker/buttons.php';
     echo "<script type='text/javascript'>document.location.href='$nextpage';</script>";
     exit;
     
@@ -89,9 +89,9 @@ if(isset($_GET['editid']) && $_GET['editid'] != NULL) {
                             } ?>
                         </td>
                         <td style="width: 40%">
-                            <a href="<?php echo site_url(); ?>/wp-admin/admin.php?page=ButtonMaker/buttons.php&editid=<?php echo $button->id; ?>">Edit</a>&nbsp;&nbsp;
-                            <a onclick="del_btn(this.rel);" href="javascript:void(0);" rel="<?php echo site_url(); ?>/wp-admin/admin.php?page=ButtonMaker/buttons.php&delid=<?php echo $button->id; ?>">Delete</a>&nbsp;&nbsp;
-                            <a onclick="clear_stats(this.rel);" href="javascript:void(0);" rel="<?php echo site_url(); ?>/wp-admin/admin.php?page=ButtonMaker/buttons.php&clearid=<?php echo $button->id; ?>">Reset the stats</a>&nbsp;&nbsp;
+                            <a href="<?php echo site_url(); ?>/wp-admin/admin.php?page=button-maker/buttons.php&editid=<?php echo $button->id; ?>">Edit</a>&nbsp;&nbsp;
+                            <a onclick="del_btn(this.rel);" href="javascript:void(0);" rel="<?php echo site_url(); ?>/wp-admin/admin.php?page=button-maker/buttons.php&delid=<?php echo $button->id; ?>">Delete</a>&nbsp;&nbsp;
+                            <a onclick="clear_stats(this.rel);" href="javascript:void(0);" rel="<?php echo site_url(); ?>/wp-admin/admin.php?page=button-maker/buttons.php&clearid=<?php echo $button->id; ?>">Reset the stats</a>&nbsp;&nbsp;
                         </td>
                         <td>
                             <input type="text" name="order[<?php echo $button->id; ?>]" value="<?php echo $button->order; ?>" class="set_order"  />
