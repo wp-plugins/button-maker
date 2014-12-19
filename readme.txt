@@ -3,7 +3,7 @@ Contributors: colinph970
 Donate link: http://pluginhandy.com/donate/
 Tags: : button, button generator, buttons, call to action, create button, create buttons in wordpress, wordpress button maker, button maker, create button in wordpress, wordpress button, plugin, short code, short codes, wordpress button generator, wordpress button maker, wordpress button plugin, wp button plugin, wp button maker, wp button maker
 Requires at least: 3.2
-Tested up to: 4.0
+Tested up to: 4.1
 Stable tag:1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
