@@ -40,6 +40,8 @@ You can read instructions for use at [Using Button Maker](http://pluginhandy.com
 
 We’d love to hear your ideas about adding extra features to this plugin. You can request new additional features at [Request Extra Feature](http://pluginhandy.com/contact-us/)
 
+BUTTON MAKER PRO IS NOW AVAILABLE AT [Button Maker Pro](http://pluginhandy.com/buttonmaker/)
+
 == Installation ==
 
 * For automatic installation:
