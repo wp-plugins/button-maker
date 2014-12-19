@@ -30,7 +30,7 @@ People love to press buttons just to see what happens!
 * Preview buttons before you place them on you site
 * Record post or page impressions and clicks on each button so you can test which works best
 * Impressions and clicks can be easily reset to zero to allow repeat testing
-* Works with Wordpress 4.0
+* Works with Wordpress 4.1
 * 3 types of button shapes
 * Color picker, so you can select virtually unlimited color combinations
 * Comes with full 5 site licence for up to 5 sites that you personally own
