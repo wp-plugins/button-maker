@@ -4,7 +4,7 @@ Donate link: http://pluginhandy.com/donate/
 Tags: : button, button generator, buttons, call to action, create button, create buttons in wordpress, wordpress button maker, button maker, create button in wordpress, wordpress button, plugin, short code, short codes, wordpress button generator, wordpress button maker, wordpress button plugin, wp button plugin, wp button maker, wp button maker
 Requires at least: 3.2
 Tested up to: 4.1
-Stable tag:1.1
+Stable tag:1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -130,6 +130,10 @@ BUTTON MAKER PRO IS NOW AVAILABLE AT [Button Maker Pro](http://pluginhandy.com/b
 No screenshots yet.
 
 == Changelog ==
+
+= 1.2 =
+* Deactivating Button Maker no longer removes the buttons stored in the database
+
 
 Issue 1.1: Changes made to files to resolve permissions problem when saving buttons.
 
