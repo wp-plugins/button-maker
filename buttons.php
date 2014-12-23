@@ -2,10 +2,10 @@
 /*
 Plugin Name: Button Maker
 Plugin URI: 
-Description: Plugin for Custom Buttons.
+Description: Plugin for Custom Buttons. This is the free version. Button Maker Pro is available <a href="http://pluginhandy.com/buttonmaker/">here</a>
 Author: Pluginhandy
 Author URI: http://pluginhandy.com/
-Version: 1.1
+Version: 1.2
 Text Domain: 
 License: GPL version 2 or later - 
 */
@@ -106,14 +106,14 @@ function map_post_type_show() {
 
 function my_plugin_deactivate()
 {
-    global $wpdb;
+/*    global $wpdb;
     $table = PROF_TABLE_PREFIX."custom_btns";
     $structure = "drop table if exists $table";
     $wpdb->query($structure);
     
     $table2 = PROF_TABLE_PREFIX."select_post";
     $table_del = "DROP TABLE IF EXISTS $table2";
-    $wpdb->query($table_del);
+    $wpdb->query($table_del);*/
 }
 
 function my_plugin_activate() {

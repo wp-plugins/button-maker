@@ -26,6 +26,15 @@ function getchecked() {
 	}
 }
 </script>
+<style type="text/css">
+#bmp_ad {
+	position: relative;
+	margin-top: 8px;
+	margin-left: 2%;
+	margin-right: auto;
+	text-align:left;
+}
+</style>
 <?php global $wpdb;
 $btntable = PROF_TABLE_PREFIX."custom_btns";
 if(isset($_GET['editid']) && $_GET['editid'] != NULL) {
@@ -52,6 +61,10 @@ if(isset($_GET['editid']) && $_GET['editid'] != NULL) {
     $buttons = $wpdb->get_results("Select * from `$btntable` order by id desc");
     //echo "<pre>";print_r($buttons);exit; ?>
     <div class="show_btns">
+		<div id="bmp_ad">
+		<a target="_blank" href="http://pluginhandy.com/buttonmaker"><img src="http://pluginhandy.com/buttonmakerpro/bmpadvert.png"></img></a>
+		</div>
+	
         <h2>List of Buttons</h2>
 		<form method="post" action="" onsubmit="return getchecked();">
         <table border="1" id="btn_table">
@@ -109,4 +122,5 @@ if(isset($_GET['editid']) && $_GET['editid'] != NULL) {
 		<?php } ?>
 		</form>
     </div>
+
 <?php } ?>
