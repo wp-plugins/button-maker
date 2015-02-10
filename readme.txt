@@ -42,9 +42,8 @@ We’d love to hear your ideas about adding extra features to this plugin. You c
 
 BUTTON MAKER PRO IS NOW AVAILABLE AT [Button Maker Pro](http://pluginhandy.com/buttonmaker/)
 
-== Button Maker Pro ==
 <p>
-<a href="http://pluginhandy.com/buttonmaker"><img class="alignnone wp-image-128 size-full" src="http://pluginhandy.com/buttonmaker/wp-content/uploads/2014/12/bmpadvert.png" alt="bmpadvert" width=“540” height="" /></a>
+<a href="http://pluginhandy.com/buttonmaker"><img src="http://pluginhandy.com/buttonmaker/wp-content/uploads/2014/12/bmpadvert.png" alt="bmpadvert" width=“540” height="" /></a>
 </p>
 
 == Installation ==
