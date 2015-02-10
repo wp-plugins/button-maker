@@ -127,7 +127,8 @@ BUTTON MAKER PRO IS NOW AVAILABLE AT [Button Maker Pro](http://pluginhandy.com/b
 * Now go to the page or post and view your buttons in action!
  
 == Screenshots ==
-No screenshots yet.
+1. Button Maker
+2. Button Maker
 
 == Changelog ==
 
