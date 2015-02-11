@@ -43,7 +43,7 @@ We’d love to hear your ideas about adding extra features to this plugin. You c
 BUTTON MAKER PRO IS NOW AVAILABLE AT [Button Maker Pro](http://pluginhandy.com/buttonmaker/)
 
 
-![button maker pro](//ps.w.org/button-maker/assets/bmpadvert.png)
+[youtube http://youtu.be/lAgg6wQ8Vao]
 
 == Installation ==
 
