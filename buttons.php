@@ -5,7 +5,7 @@ Plugin URI:
 Description: Plugin for Custom Buttons. This is the free version. Button Maker Pro is available <a href="http://pluginhandy.com/buttonmaker/">here</a>
 Author: Pluginhandy
 Author URI: http://pluginhandy.com/
-Version: 1.2
+Version: 1.3
 Text Domain: 
 License: GPL version 2 or later - 
 */
@@ -313,7 +313,8 @@ function myscript() {
                     }),
                     success: function(data) {
                         if(data.output === 'yes') {
-                            document.location.href = data.url;
+                            //document.location.href = data.url;//open in same window
+							window.open(data.url,"_blank");//open in new tab/window
                         }
                     }
                  });
